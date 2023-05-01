@@ -15,13 +15,11 @@ HelloWorld.sol Contract -Address: 0xbF09320746353c9E74e4D3DBB7396d6A87AAA61e
 
 pragma solidity >=0.7.0 <0.9.0;
 
-
 contract HelloWorld {
 
       string private text;
    
       address public owner;
-
 
        constructor(){
             text = "Hello World!";
@@ -31,7 +29,6 @@ contract HelloWorld {
             owner = msg.sender;
        }
 
-
       function helloWorld() public view returns (string memory){
    
             return text;
@@ -39,19 +36,16 @@ contract HelloWorld {
   
       modifier onlyOwner(){
    
-            require(msg.sender == owner, "Wrong address. Not the owner!");
-       
+            require(msg.sender == owner, "Wrong address. Not the owner!");       
             _;
        
       }
-
 
       function setText(string calldata newText) public onlyOwner{
    
             text = newText;
        
       }
-
 
       function transferOwnership(address newOwner) public onlyOwner {
    
@@ -69,6 +63,7 @@ contract HelloWorld {
 REPORT
 
 1 - Contract deployment (constructor call)
+```
 
 Etherscan: https://goerli.etherscan.io/tx/0x8bcedf7493c3fcabc13a03090a6ca02ac5df74487e75d03da484b4bedd0863f1
 
@@ -80,6 +75,7 @@ To: 0xbf09320746353c9e74e4d3dbb7396d6a87aaa61e
 Value: 0
 Transaction fee: 0.001581639407378085 ETH
 Gas Price: 2.659321445 Gwei 
+```
 
 2 - helloWorld() function: Function that replies with text variable value:
 Public view function 
