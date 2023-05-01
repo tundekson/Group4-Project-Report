@@ -77,14 +77,17 @@ Transaction fee: 0.001581639407378085 ETH
 Gas Price: 2.659321445 Gwei 
 ```
 
-2 - helloWorld() function: Function that replies with text variable value:
+2 - helloWorld() function: 
+```
+Function that replies with text variable value:
 Public view function 
 It does not write to the blockchain,  so there is no transaction
 
 Returns the last value set with setText() function, or the default value “Hello World!”
+```
 
 3 - setText() function: Functions that modifies the text variable with a new value:
-
+```
 Etherscan:
 https://goerli.etherscan.io/tx/0x2edde07c4f33cc0487ab01b72f4b75988d4aa0d5f69fbb7f20dab982857b3881
 
@@ -97,9 +100,12 @@ Value: 0
 Transaction fee: 0.000136805846817584 ETH
 Gas Price: 4.579735097 Gwei
 
+```
+
 4 - transferOwnership() function
+``
 
 https://goerli.etherscan.io/tx/0x80845c91a6a6c8568c8f945d4a4f9751e67dd135d4323ab059d04200c7769bfa
 
+```
 
---------------------------------------------------------------------------------------------------------
