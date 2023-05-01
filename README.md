@@ -18,18 +18,18 @@ pragma solidity >=0.7.0 <0.9.0;
 
 contract HelloWorld {
 
-   string private text;
+      string private text;
    
-   address public owner;
+      address public owner;
 
 
-   constructor(){
-       text = "Hello World!";
+       constructor(){
+            text = "Hello World!";
        
-       //owner is set to the deploy account address
+            //owner is set to the deploy account address
        
-       owner = msg.sender;
-   }
+            owner = msg.sender;
+       }
 
 
    function helloWorld() public view returns (string memory){
