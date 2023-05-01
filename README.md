@@ -32,32 +32,32 @@ contract HelloWorld {
        }
 
 
-   function helloWorld() public view returns (string memory){
+      function helloWorld() public view returns (string memory){
    
-       return text;
-   }
+            return text;
+      }
   
-   modifier onlyOwner(){
+      modifier onlyOwner(){
    
-       require(msg.sender == owner, "Wrong address. Not the owner!");
+            require(msg.sender == owner, "Wrong address. Not the owner!");
        
-       _;
+            _;
        
-   }
+      }
 
 
-   function setText(string calldata newText) public onlyOwner{
+      function setText(string calldata newText) public onlyOwner{
    
-       text = newText;
+            text = newText;
        
-   }
+      }
 
 
-   function transferOwnership(address newOwner) public onlyOwner {
+      function transferOwnership(address newOwner) public onlyOwner {
    
-       owner == newOwner;
+            owner == newOwner;
        
-   }
+      }
    
 }
 
