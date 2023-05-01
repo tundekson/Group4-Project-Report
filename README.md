@@ -4,7 +4,7 @@
 
 --------------------------------------------------------------------------------------------------------
 
-HelloWorld.sol Contract -Address: 0xbF09320746353c9E74e4D3DBB7396d6A87AAA61e
+HelloWorld.sol Contract -Address: 0xde23104d2914a16053a549cb075bd8811231b2c8
 
 
 --------------------------------------------------------------------------------------------------------
@@ -65,16 +65,16 @@ REPORT
 1 - Contract deployment (constructor call)
 ```
 
-Etherscan: https://goerli.etherscan.io/tx/0x8bcedf7493c3fcabc13a03090a6ca02ac5df74487e75d03da484b4bedd0863f1
+Etherscan: https://goerli.etherscan.io/tx/0x5c5283d9b01b09fb8771cf99297a10967e16f81c169b33fee201c6da91e024bc
 
 Status: Success
 Block: 8916705
 From: 0xbc3a67ec1664d540c17aeb8f6bea5ba89adb9e15
-To: 0xbf09320746353c9e74e4d3dbb7396d6a87aaa61e
+To: 0xde23104d2914a16053a549cb075bd8811231b2c8
 
 Value: 0
-Transaction fee: 0.001581639407378085 ETH
-Gas Price: 2.659321445 Gwei 
+Transaction fee: 0.007613070040511416 ETH
+Gas Price: 11.579928097 Gwei 
 ```
 
 2 - helloWorld() function: 
@@ -93,19 +93,41 @@ https://goerli.etherscan.io/tx/0x2edde07c4f33cc0487ab01b72f4b75988d4aa0d5f69fbb7
 
 Status: Success
 Block: 8916741
-From: 0xbc3a67ec1664d540c17aeb8f6bea5ba89adb9e15
-To: 0xbf09320746353c9e74e4d3dbb7396d6a87aaa61e
+From: 0x5ee85c2890c2201ff9e28dedb70f38aacc775eb4
+To: 0xde23104d2914a16053a549cb075bd8811231b2c8
 
 Value: 0
-Transaction fee: 0.000136805846817584 ETH
-Gas Price: 4.579735097 Gwei
+Transaction fee: 0.000346763374275856 ETH
+Gas Price: 11.608307923 Gwei Gwei
 
+Input data:
+Function: setText(string _text) ***
+
+MethodID: 0x5d3a1f9d
+[0]:  0000000000000000000000000000000000000000000000000000000000000020
+[1]:  000000000000000000000000000000000000000000000000000000000000000d
+[2]:  48656c6c6f2047726f7570203400000000000000000000000000000000000000
 ```
 
 4 - transferOwnership() function
 
 ```
-https://goerli.etherscan.io/tx/0x80845c91a6a6c8568c8f945d4a4f9751e67dd135d4323ab059d04200c7769bfa
+Etherscan:
+https://goerli.etherscan.io/tx/0x04d00d994e99356ffda46fb8d1098cec30184ad016fb44a0b7d19cbe09f91ace
+
+Status: Success
+From: 0xbc3a67ec1664d540c17aeb8f6bea5ba89adb9e15
+To: 0xde23104d2914a16053a549cb075bd8811231b2c8
+
+Value: 0
+Transaction fee: 0.000280743776783668 ETH
+Gas Price: 11.579928097 Gwei
+
+Input data:
+Function: transferOwnership(address _newOwner) ***
+
+MethodID: 0xf2fde38b
+[0]:  0000000000000000000000005ee85c2890c2201ff9e28dedb70f38aacc775eb4
 
 ```
 
