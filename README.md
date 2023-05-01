@@ -103,8 +103,8 @@ Gas Price: 4.579735097 Gwei
 ```
 
 4 - transferOwnership() function
-``
 
+```
 https://goerli.etherscan.io/tx/0x80845c91a6a6c8568c8f945d4a4f9751e67dd135d4323ab059d04200c7769bfa
 
 ```
